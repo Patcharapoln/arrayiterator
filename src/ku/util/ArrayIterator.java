@@ -3,10 +3,20 @@ package ku.util;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+/**
+ * Iterate over all the elements in the collection without knowing the structure
+ * of the collection.
+ * 
+ * @author Patcharapol Nirunpornputta
+ *
+ * @param <T>
+ *            the type of thing in the ArrayIterator.
+ * 
+ */
 public class ArrayIterator<T> implements Iterator<T> {
 	/** attribute for the array we want to iterate over */
 	private T[] array;
-	/** position of element	 */
+	/** position of element */
 	private int cursor = 0;
 	/** Control a use of remove() */
 	private boolean delete = false;
